@@ -1,0 +1,153 @@
+\documentclass[12pt,a4paper,sans]{moderncv}
+\usepackage[utf8]{inputenc}
+
+% thiner margins
+\usepackage[margin=1.8cm,bottom=2.4cm]{geometry} 
+\recomputelengths{}
+
+% skill levels
+\usepackage[heightr=0.75,roundnessr=0,width=8em,borderwidth=0pt,ticksheight=0pt,linecolor=white,filledcolor=gray]{progressbar}
+\newcommand{\Expert}{\progressbar{1}}
+\newcommand{\Avance}{\progressbar{0.75}}
+\newcommand{\Autonome}{\progressbar{0.5}}
+\newcommand{\Notions}{\progressbar{0.25}}
+
+\moderncvstyle{casual}
+\moderncvcolor{green}
+
+\name{Romain}{\color{color1}\textsc{Déoux}}
+\title{Analyste Développeur}
+\phone[mobile]{06~82~87~38~02}
+\email{romain.deoux@gmail.com}
+\social[github]{koneko}
+% I should take a shot, maybe…
+%\photo[64pt]{}
+
+\nopagenumbers{}
+
+\begin{document}
+\maketitle
+
+\section{Compétences}
+
+\begin{tabular}{p{\hintscolumnwidth} @{\hspace{\separatorcolumnwidth}} p{4cm} r}
+	\raggedleft\hintstyle{Application}
+	  & C          & \Expert{}   \\
+	  & C++        & \Expert{}   \\
+	  & Java SE    & \Notions{}  \\
+	  & C\#        & \Notions{}  \\[1ex]
+	\raggedleft\hintstyle{Script}
+	  & Korn shell & \Avance{}   \\
+	  & Python3    & \Avance{}   \\
+	  & Perl       & \Autonome{} \\[1ex]
+	\raggedleft\hintstyle{Web}
+	  & Javascript & \Avance{}   \\
+	  & NodeJS     & \Avance{}   \\
+	  & CSS3       & \Autonome{} \\
+	  & HTML5      & \Autonome{} \\
+	  & PHP7       & \Autonome{} \\
+	  & SQL        & \Autonome{} 
+\end{tabular}
+
+\bigskip{}
+
+\cvline{Linux}{Maîtrise de l’environnement GNU/Linux}
+\cvline{Workflow}{Méthodes Agiles, JIRA, Mantis, Test Driven Development}
+\cvline{CI}{Buildbot, Docker, Jenkins (maître/esclaves), VirtualBox}
+\cvline{Versionnage}{Subversion, git}
+\cvline{Build system}{Makefile, CMake}
+\cvline{Embarqué}{Buildroot, BusyBox, Windows CE}
+
+\medskip{}
+
+\cvline{Langue}{Anglais courant}
+
+\section{Dipl\^{o}mes}
+
+\cventry{2009--2010}{Licence professionnel}{UFR des Sciences et Techniques}{Besançon}{}{%
+	Systèmes Informatiques et Logiciels
+spécialité Conception et Développement Orienté Objet d'Applications Multi-tiers}
+
+\cventry{2007--2009}{BTS}{Lycée Jules Haag}{Besançon}{}{%
+Informatique et Réseau pour l'Industrie et les Services techniques}
+
+\cventry{2007}{Baccalauréat Scientifique}{Lycée Jules Haag}{Académie de Besançon}{}{%
+Sciences de l'Ingénieur spécialité Mathématiques}
+
+\clearpage
+\section{Parcours professionnel}
+
+\cventry{Depuis 2010}{Technicien analyste programmeur}{\href{https://www.aprogsys.com/}{Aprogsys}}{Besançon}{Salarié}{%
+	\begin{itemize}
+		\item Sous-traitance pour \href{http://vixtechnology.com/}{VIX}
+		      \begin{itemize}
+		      	\item Développement d'un système billettique sur Linux embarqué
+		      	      en C99 et C++11
+		      	\item Développement sur systèmes embarqués (pupitre valideur et
+		      	      valideur de titres de transport, concentrateur de données)
+		      	\item Décodage/encodage de cartes sans contact
+		      	\item Travail en collaboration avec des ingénieurs à l'étranger
+		      	\item Implémentation de tests fonctionnels automatisés
+		      \end{itemize}
+		\item Sous-traitance pour \href{http://www.parkeon.fr/}{Parkeon}
+		      \begin{itemize}
+		      	\item Développement sur systèmes embarqués (imprimante de
+		      	      tickets, carte électronique de surveillance, dépilleur de
+		      	      cartes)
+		      	\item Décodage/encodage de pistes magnétiques
+		      	\item Programmation par interruptions
+		      	\item Protocole de communication série (basé sur HDLC)
+		      	\item Recettes de construction automatique de fichiers CMake
+		      	\item Intégration Continue via Jenkins
+		      \end{itemize}
+		\item Analyse et développement logiciel spécialisé dans le domaine
+		      de la traçabilité et du monitoring via la technologie RFID
+		      \begin{itemize}
+		      	\item \href{http://www.caves-explorer.com/}{Caves Explorer}~:
+		      	      Logiciel de gestion de caves à vin grand public assisté
+		      	      par des radio-étiquettes SLI, développé à l'aide du
+		      	      framework Qt.
+		      	      Synchronisation des données entre une base de données
+		      	      distante MySQL et une base locale SQLite.
+		      	      Solutions dérivés intégrés à la solution principale.
+		      	\item \href{http://www.beetracking.com/}{Beetracking}~:
+		      	      Solution de suivi de rucher et de marquage de ruche par
+		      	      radio-étiquettes passives {UHF}.
+		      	      Développement embarqué sur BOLYMIN, Armadeus et terminaux
+		      	      portatifs durcis {PSION}.
+		      	      Envois de SMS (commandes AT).
+		      	\item
+		      	      Développement d'une solution de traçabilité de chaîne de
+		      	      production.
+		      	      Système d'informations distribués.
+		      	      Radio-étiquettes {MIFARE}.
+		      \end{itemize}
+		\item Développement d'une IHM en C/GTK pour gérer des données
+		      vectorielles au sein d'une carte dans le cadre d'un projet destiné
+		      à la Défense.
+		\item Applications Web exploitant notamment Bootstrap et jQuery.
+	\end{itemize}}
+
+\cventry{2010 \\
+	\small\color{gray}{2 mois}}{Ouvier saisonnier}{R. Bourgeois}{Besançon}{Salarié}{%
+Cerclage de palette}
+
+\cventry{2010 \\
+	\small\color{gray}{3 mois}}{Stage en entreprise}{Parkéon}{Besançon}{Stagiaire}{%
+	Programmation en Java d'un logiciel chargé de piloter un banc d'encodage de
+cartes magnétiques et de gérer les mappings de cartes}
+
+\cventry{2009 \\
+	\small\color{gray}{2 mois}}{Ouvrier d'exécution}{Saint Nazaire (Loire Atlantique)}{Renaissance SARL}{Salarié}{%
+Travaux de rénovation, maroufflage de moteur de bateau}
+
+\cventry{2008 \\
+	\small\color{gray}{6 semaines}}{Stage en entreprise}{Besançon}{Selma (Aujourd'hui appelé \href{http://www.safed.ch/}{SAFED})}{Stagiaire}{%
+Logiciel de monitoring de température de fours industriels}
+
+\section{Centres d'intérêt}
+
+\cvlistitem{Aikido}
+\cvlistitem{Apiculture}
+
+\end{document}
