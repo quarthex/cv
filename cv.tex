@@ -1,16 +1,21 @@
-\documentclass[12pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper,sans,french]{moderncv}
 \usepackage[utf8]{inputenc}
+\usepackage{babel}
 
 % thiner margins
 \usepackage[margin=1.8cm,bottom=2.4cm]{geometry}
 \recomputelengths{}
 
 % skill levels
-\usepackage[heightr=0.75,roundnessr=0,width=8em,borderwidth=0pt,ticksheight=0pt,linecolor=white,filledcolor=gray]{progressbar}
-\newcommand{\Expert}{\progressbar{1}}
-\newcommand{\Avance}{\progressbar{0.75}}
-\newcommand{\Autonome}{\progressbar{0.5}}
-\newcommand{\Notions}{\progressbar{0.25}}
+\usepackage{tikz}
+\newcommand{\skilllevel}[1]{\tikz [x=1pt, y=.666em, xslant=.3, rounded corners] {% The devil is in the detail
+  \fill [gray!15] (0, 0) rectangle (100, 1);%
+  \fill [color1] (0, 0) rectangle (100 * #1, 1);%
+}}
+\newcommand{\Expert}{\skilllevel{1}}
+\newcommand{\Avance}{\skilllevel{0.75}}
+\newcommand{\Autonome}{\skilllevel{0.5}}
+\newcommand{\Notions}{\skilllevel{0.25}}
 
 \moderncvstyle{casual}
 \moderncvcolor{green}
@@ -21,7 +26,7 @@
 \email{romain.deoux@gmail.com}
 \social[github]{quarthex}
 % I should take a shot, maybe…
-%\photo[64pt]{}
+\photo{2017-12-29.jpg}
 
 \nopagenumbers{}
 
