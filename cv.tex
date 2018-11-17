@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 % thiner margins
-\usepackage[margin=1.8cm,bottom=2.4cm]{geometry} 
+\usepackage[margin=1.8cm,bottom=2.4cm]{geometry}
 \recomputelengths{}
 
 % skill levels
@@ -31,26 +31,26 @@
 \section{Compétences}
 
 \begin{tabular}{p{\hintscolumnwidth} @{\hspace{\separatorcolumnwidth}} p{4cm} r}
-	\raggedleft\hintstyle{Application}
-	  & C            & \Expert{}   \\
-	  & C++          & \Expert{}   \\
-	  & Rust         & \Notions{}  \\
-	  & Java SE      & \Notions{}  \\
-	  & C\#          & \Notions{}  \\
-	  & Haskell      & \Notions{}  \\[1ex]
-	\raggedleft\hintstyle{Script}
-	  & Korn shell   & \Avance{}   \\
-	  & Python3      & \Avance{}   \\
-	  & Perl         & \Autonome{} \\[1ex]
-	\raggedleft\hintstyle{Web}
-	  & Javascript   & \Avance{}   \\
-	  & NodeJS       & \Avance{}   \\
-	  & CSS3         & \Autonome{} \\
-	  & CoffeeScript & \Autonome{} \\
-	  & HTML5        & \Autonome{} \\
-	  & PHP7         & \Autonome{} \\
-	  & SQL          & \Autonome{} \\
-	  & Sass         & \Autonome{} 
+ \raggedleft\hintstyle{Application}
+  & C            & \Expert{}   \\
+  & C++          & \Expert{}   \\
+  & Rust         & \Notions{}  \\
+  & Java SE      & \Notions{}  \\
+  & C\#          & \Notions{}  \\
+  & Haskell      & \Notions{}  \\[1ex]
+ \raggedleft\hintstyle{Script}
+  & Korn shell   & \Avance{}   \\
+  & Python3      & \Avance{}   \\
+  & Perl         & \Autonome{} \\[1ex]
+ \raggedleft\hintstyle{Web}
+  & Javascript   & \Avance{}   \\
+  & NodeJS       & \Avance{}   \\
+  & CSS3         & \Autonome{} \\
+  & CoffeeScript & \Autonome{} \\
+  & HTML5        & \Autonome{} \\
+  & PHP7         & \Autonome{} \\
+  & SQL          & \Autonome{} \\
+  & Sass         & \Autonome{}
 \end{tabular}
 
 \bigskip{}
@@ -69,91 +69,87 @@
 \section{Dipl\^{o}mes}
 
 \cventry{2009--2010}{Licence professionnel}{UFR des Sciences et Techniques}{Besançon}{}{%
-	Systèmes Informatiques et Logiciels
-spécialité Conception et Développement Orienté Objet d'Applications Multi-tiers}
+ Systèmes Informatiques et Logiciels
+ spécialité Conception et Développement Orienté Objet d'Applications Multi-tiers}
 
 \cventry{2007--2009}{BTS}{Lycée Jules Haag}{Besançon}{}{%
-Informatique et Réseau pour l'Industrie et les Services techniques}
+ Informatique et Réseau pour l'Industrie et les Services techniques}
 
 \cventry{2007}{Baccalauréat Scientifique}{Lycée Jules Haag}{Académie de Besançon}{}{%
-Sciences de l'Ingénieur spécialité Mathématiques}
+ Sciences de l'Ingénieur spécialité Mathématiques}
 
 \clearpage
 \section{Parcours professionnel}
 
-\cventry{Depuis 2010}{Technicien analyste programmeur}{\href{https://www.aprogsys.com/}{Aprogsys}}{Besançon}{Salarié}{%
-	\begin{itemize}
-		\item Sous-traitance pour \href{http://vixtechnology.com/}{VIX}
-		      \begin{itemize}
-		      	\item Développement d'un système billettique sur Linux embarqué
-		      	      en C99 et C++11
-		      	\item Développement sur systèmes embarqués (pupitre valideur et
-		      	      valideur de titres de transport, concentrateur de données)
-		      	\item Décodage/encodage de cartes sans contact
-		      	\item Travail en collaboration avec des ingénieurs à l'étranger
-		      	\item Implémentation de tests fonctionnels automatisés
-		      	\item Développement d'une application web embarquée de
-		      	      configuration de carte sans contact.
-		      	      Interface utilisant Bootstrap et jQuery compilée via
-		      	      Grunt.
-		      	      Serveur asynchrone (bibliothèque libuv) en C communiquant
-		      	      avec un backend via le bus D-Bus.
-		      \end{itemize}
-		\item Sous-traitance pour \href{http://flowbird.group/}{Flowbird}
-		      \begin{itemize}
-		      	\item Développement sur systèmes embarqués (imprimante de
-		      	      tickets, carte électronique de surveillance, dépilleur de
-		      	      cartes)
-		      	\item Décodage/encodage de pistes magnétiques
-		      	\item Programmation par interruptions
-		      	\item Protocole de communication série (basé sur HDLC)
-		      	\item Recettes de construction automatique de fichiers CMake
-		      	\item Intégration Continue via Jenkins
-		      \end{itemize}
-		\item Analyse et développement logiciel spécialisé dans le domaine
-		      de la traçabilité et du monitoring via la technologie RFID
-		      \begin{itemize}
-		      	\item \href{http://www.caves-explorer.com/}{Caves Explorer}~:
-		      	      Logiciel de gestion de caves à vin grand public assisté
-		      	      par des radio-étiquettes SLI, développé à l'aide du
-		      	      framework Qt.
-		      	      Synchronisation des données entre une base de données
-		      	      distante MySQL et une base locale SQLite.
-		      	      Solutions dérivés intégrés à la solution principale.
-		      	\item \href{http://www.beetracking.com/}{Beetracking}~:
-		      	      Solution de suivi de rucher et de marquage de ruche par
-		      	      radio-étiquettes passives {UHF}.
-		      	      Développement embarqué sur BOLYMIN, Armadeus et terminaux
-		      	      portatifs durcis {PSION}.
-		      	      Envois de SMS (commandes AT).
-		      	\item
-		      	      Développement d'une solution de traçabilité de chaîne de
-		      	      production.
-		      	      Système d'informations distribués.
-		      	      Radio-étiquettes {MIFARE}.
-		      \end{itemize}
-		\item Développement d'une IHM en C/GTK pour gérer des données
-		      vectorielles au sein d'une carte dans le cadre d'un projet destiné
-		      à la Défense.
-		\item Participation au développement d'applications Web.
-	\end{itemize}}
+\cventry{Depuis 2010}{Technicien analyste programmeur}
+{\href{https://www.aprogsys.com/}{Aprogsys}}{Besançon}{Salarié}{%
+ \begin{itemize}
+  \item Sous-traitance pour \href{http://vixtechnology.com/}{VIX}
+        \begin{itemize}
+         \item Développement d'un système billettique sur Linux embarqué
+               en C99 et C++11
+         \item Développement sur systèmes embarqués (pupitre valideur et
+               valideur de titres de transport, concentrateur de données)
+         \item Décodage/encodage de cartes sans contact
+         \item Travail en collaboration avec des ingénieurs à l'étranger
+         \item Implémentation de tests fonctionnels automatisés
+         \item Développement d'une application web embarquée de configuration
+               de carte sans contact.
+               Interface utilisant Bootstrap et jQuery compilée via Grunt.
+               Serveur asynchrone (bibliothèque libuv) en C communiquant avec
+               un backend via le bus D-Bus.
+        \end{itemize}
+  \item Sous-traitance pour \href{http://flowbird.group/}{Flowbird}
+        \begin{itemize}
+         \item Développement sur systèmes embarqués (imprimante de tickets,
+               carte électronique de surveillance, dépilleur de cartes)
+         \item Décodage/encodage de pistes magnétiques
+         \item Programmation par interruptions
+         \item Protocole de communication série (basé sur HDLC)
+         \item Recettes de construction automatique de fichiers CMake
+         \item Intégration Continue via Jenkins
+        \end{itemize}
+  \item Analyse et développement logiciel spécialisé dans le domaine
+        de la traçabilité et du monitoring via la technologie RFID
+        \begin{itemize}
+         \item \href{http://www.caves-explorer.com/}{Caves Explorer}~:
+               Logiciel de gestion de caves à vin grand public assisté par des
+               radio-étiquettes SLI, développé à l'aide du framework Qt.
+               Synchronisation des données entre une base de données distante
+               MySQL et une base locale SQLite.
+               Solutions dérivés intégrés à la solution principale.
+         \item \href{http://www.beetracking.com/}{Beetracking}~:
+               Solution de suivi de rucher et de marquage de ruche par
+               radio-étiquettes passives {UHF}.
+               Développement embarqué sur BOLYMIN, Armadeus et terminaux
+               portatifs durcis {PSION}.
+               Envois de SMS (commandes AT).
+         \item
+               Développement d'une solution de traçabilité de chaîne de
+               production.
+               Système d'informations distribués.
+               Radio-étiquettes {MIFARE}.
+        \end{itemize}
+  \item Développement d'une IHM en C/GTK pour gérer des données vectorielles au
+        sein d'une carte dans le cadre d'un projet destiné à la Défense.
+  \item Participation au développement d'applications Web.
+ \end{itemize}}
 
-\cventry{2010 \\
-	\small\color{gray}{2 mois}}{Ouvier saisonnier}{R. Bourgeois}{Besançon}{Salarié}{%
-Cerclage de palette}
+\cventry{2010\\\small\color{gray}{2 mois}}{Ouvier saisonnier}
+{R. Bourgeois}{Besançon}{Salarié}{Cerclage de palette}
 
-\cventry{2010 \\
-	\small\color{gray}{3 mois}}{Stage en entreprise}{Parkeon (Aujourd'hui appelé Flowbird)}{Besançon}{Stagiaire}{%
-	Programmation en Java d'un logiciel chargé de piloter un banc d'encodage de
-cartes magnétiques et de gérer les mappings de cartes}
+\cventry{2010\\\small\color{gray}{3 mois}}{Stage en entreprise}
+{Parkeon (Aujourd'hui appelé Flowbird)}{Besançon}{Stagiaire}{%
+ Programmation en Java d'un logiciel chargé de piloter un banc d'encodage de
+ cartes magnétiques et de gérer les mappings de cartes}
 
-\cventry{2009 \\
-	\small\color{gray}{2 mois}}{Ouvrier d'exécution}{Saint Nazaire (Loire Atlantique)}{Renaissance SARL}{Salarié}{%
-Travaux de rénovation, maroufflage de moteur de bateau}
+\cventry{2009\\\small\color{gray}{2 mois}}{Ouvrier d'exécution}
+{Renaissance SARL}{Saint Nazaire (Loire Atlantique)}{Salarié}{%
+ Travaux de rénovation, maroufflage de moteur de bateau}
 
-\cventry{2008 \\
-	\small\color{gray}{6 semaines}}{Stage en entreprise}{Besançon}{Selma (Aujourd'hui appelé \href{http://www.safed.ch/}{SAFED})}{Stagiaire}{%
-Logiciel de monitoring de température de fours industriels}
+\cventry{2008\\\small\color{gray}{6 semaines}}{Stage en entreprise}
+{Selma (Aujourd'hui appelé \href{http://www.safed.ch/}{SAFED})}{Besançon}{Stagiaire}{%
+ Logiciel de monitoring de température de fours industriels}
 
 \section{Centres d'intérêt}
 
